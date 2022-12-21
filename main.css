@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+.container {
+    width: 50%
+}
+
+.calculator-btn {
+    text-align: center;
+}
+
+.two-btn-area {
+    text-align: center;
+}
+
+.calculator-display {
+    text-align: right;
+}
