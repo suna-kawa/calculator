@@ -8,41 +8,39 @@
 <title>電卓</title>
 </head>
 <body>
-    <form name="calculator">
     <table border="1" class="container">
         <tr class="calculator-display">
-            <td colspan="4"><input type="text" name="display" value="" disabled></td>
+            <td colspan="4" id="value">0</td>
         </tr>
         <tr class="calculator-btn">
-            <td><button type="button" value="7" name="num-seven">7</button></td>
-            <td><button type="button" value="8" name="num-eight">8</button></td>
-            <td><button type="button" value="9" name="num-nine">9</button></td>
-            <td><button type="button" value="+" name="plus">+</button></td>
+            <td><button type="button" value="7" name="num-seven" onclick="clickBtn(this)">7</button></td>
+            <td><button type="button" value="8" name="num-eight" onclick="clickBtn(this)">8</button></td>
+            <td><button type="button" value="9" name="num-nine" onclick="clickBtn(this)">9</button></td>
+            <td><button type="button" value="+" name="plus" onclick="clickBtn(this)">+</button></td>
         </tr>
         <tr class="calculator-btn">
-            <td><button type="button" value="4" name="num-four">4</button></td>
-            <td><button type="button" value="5" name="num-five">5</button></td>
-            <td><button type="button" value="6" name="num-six">6</button></td>
-            <td><button type="button" value="-" name="minus">-</button></td>
+            <td><button type="button" value="4" name="num-four" onclick="clickBtn(this)">4</button></td>
+            <td><button type="button" value="5" name="num-five" onclick="clickBtn(this)">5</button></td>
+            <td><button type="button" value="6" name="num-six" onclick="clickBtn(this)">6</button></td>
+            <td><button type="button" value="-" name="minus" onclick="clickBtn(this)">-</button></td>
         </tr>
         <tr class="calculator-btn">
-            <td><button type="button" value="1" name="num-one">1</button></td>
-            <td><button type="button" value="2" name="num-two">2</button></td>
-            <td><button type="button" value="3" name="num-three">3</button></td>
-            <td><button type="button" value="*" name="times">*</button></td>
+            <td><button type="button" value="1" name="num-one" onclick="clickBtn(this)">1</button></td>
+            <td><button type="button" value="2" name="num-two" onclick="clickBtn(this)">2</button></td>
+            <td><button type="button" value="3" name="num-three" onclick="clickBtn(this)">3</button></td>
+            <td><button type="button" value="*" name="times" onclick="clickBtn(this)">*</button></td>
         </tr>
         <tr class="calculator-btn">
-            <td><button type="button" value="0" name="zero">0</button></td>
-            <td><button type="button" value="00" name="two-zero">00</button></td>
-            <td><button type="button" value="." name="dod">.</button></td>
-            <td><button type="button" value="/" name="divided">/</button></td>
+            <td><button type="button" value="0" name="zero" onclick="clickBtn(this)">0</button></td>
+            <td><button type="button" value="00" name="two-zero" onclick="clickBtn(this)">00</button></td>
+            <td><button type="button" value="." name="dod" onclick="clickBtn(this)">.</button></td>
+            <td><button type="button" value="/" name="divided" onclick="clickBtn(this)">/</button></td>
         </tr>
         <tr class="two-btn-area">
-            <td colspan="2"><button type="button" value="AC" name="all-clear">AC</button></td>
-            <td colspan="2"><button type="button" value="=" name="equal">=</button></td>
+            <td colspan="2"><button type="button" value="AC" name="all-clear" onclick="clickBtn(this)">AC</button></td>
+            <td colspan="2"><button type="button" value="=" name="equal" onclick="clickBtn(this)">=</button></td>
         </tr>
     </table>
-    </form>
 <script src="main.js"></script>
 </body>
 </html>
