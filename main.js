@@ -15,7 +15,7 @@ function clickBtn(numBtn) {
         result.innerHTML = eval(result.innerHTML)
         return;
     }
-    if(result.innerHTML == '0') {
+    if(result.innerHTML == '0' || result.innerHTML == '00') {
         result.innerHTML = btnValue
         return;
     }
